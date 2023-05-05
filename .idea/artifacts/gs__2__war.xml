@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="gs (2):war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>gs (2)</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="layssh-0.0.4-layssh.war">
+      <element id="artifact" artifact-name="gs (2):war exploded" />
+    </root>
+  </artifact>
+</component>
