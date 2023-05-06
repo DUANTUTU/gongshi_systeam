@@ -110,8 +110,6 @@
                 </div>
             </div>
         </div>
-
-
     </div>
 
 
@@ -124,6 +122,7 @@
         </div>
     </div>
 </form>
+
 <script>
     layui.use(['form', 'layedit', 'laydate', 'jquery'], function () {
         var form = layui.form;

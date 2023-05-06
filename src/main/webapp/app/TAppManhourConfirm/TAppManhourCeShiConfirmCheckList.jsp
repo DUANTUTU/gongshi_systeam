@@ -10,7 +10,7 @@
 <html>
 
 <head>
-    <title>工时提报</title>
+    <title>测试审核</title>
     <jsp:include page="../../inc.jsp"></jsp:include>
 </head>
 <body>
@@ -56,7 +56,7 @@
                 {field: 'mprojectidNm', title: '项目ID', align: 'center', sort: true},
                 {field: 'mprojectplanidNM', title: '项目里程碑ID', align: 'center', sort: true},
                 {field: 'mopercd', title: '人员id', align: 'center', sort: true},
-                {field: 'mopercdNm', title: '姓名', align: 'center', sort: true},
+                {field: 'mopercdNm', title: '姓名111', align: 'center', sort: true},
                 {field: 'mworkdetails', title: '工作内容', align: 'center', sort: true},
                 {field: 'mmanhour', title: '工时', align: 'center', sort: true},
                 {field: 'mcheckstatusNm', title: '审核状态', align: 'center', templet: "#mcheckstatusNmTpl"},

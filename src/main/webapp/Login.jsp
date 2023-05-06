@@ -8,7 +8,7 @@
 <html>
 
 <head>
-<title>工时系统</title>
+<title>之年工时系统</title>
 
 
 	<link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/css/login.css"></link>
@@ -38,7 +38,7 @@
 		<!-- Header -->
 		<header id="header">
 			<div id="top">
-				<h1 style="margin-top:25px;color:#FFFFFF">工时系统</h1>
+				<h1 style="margin-top:25px;color:#FFFFFF">之年工时系统</h1>
 			</div>
 			<div id="loginbg" class="loginbg" style="margin:0 auto; width:500px; height:500px;">
 				<div id="login_form" class="login_form">
@@ -59,7 +59,7 @@
 		</header>
 		<!-- Footer -->
 		<footer id="footer">
-			<span class="copyright">&copy; 艾嘉科技 2020 copyright by Aijia Technology Co., Ltd</span>
+			<span class="copyright">&copy; 之年科技 2023 </span>
 <%--			<span class="copyright">&copy; 富瑞能源: <a href="javascript:void(0);">2020</a></span>--%>
 		</footer>
 

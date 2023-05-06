@@ -2,13 +2,13 @@
 
 <head>
     <meta charset="utf-8">
-    <title>工时系统</title>
+    <title>之年工时系统</title>
     <jsp:include page="inc.jsp"></jsp:include>
 </head>
 
 <body>
 <html>
-<H1>工时系统</H1><br>
+<H1>之年工时系统</H1><br>
 <fieldset class="layui-elem-field layui-field-title alone-title" style="width: 300px;">
     <legend>历史版本事件</legend>
 </fieldset>
@@ -17,7 +17,7 @@
         <div class="layui-timeline-content layui-text">
             <h3 class="layui-timeline-title">2020年03月25日</h3>
             <p>
-                工时系统立项
+                之年工时系统立项
             </p>
         </div>
     </li>
@@ -41,7 +41,7 @@
         <div class="layui-timeline-content layui-text">
             <h3 class="layui-timeline-title">2020年03月31日</h3>
             <p>
-                工时系统代码构建
+                之年工时系统代码构建
             </p>
         </div>
     </li>

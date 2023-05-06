@@ -26,7 +26,7 @@
 
 <head>
 <meta charset="utf-8">
-<title>工时系统</title>
+<title>之年工时系统</title>
 <jsp:include page="inc.jsp"></jsp:include>
 <link rel="stylesheet" href="css/global.css" media="all">
 <link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
@@ -38,7 +38,7 @@
 			<div class="layui-main">
 				<div class="admin-login-box">
 					<a class="logo" style="left: 0;" href="#"> <span
-						style="font-size: 22px;">工时系统</span>
+						style="font-size: 22px;">之年工时系统</span>
 					</a>
                     <div class="admin-side-toggle" style="background-color: #01AAED;">
                         <i class="fa fa-bars"  aria-hidden="true"></i>
@@ -88,7 +88,7 @@
 		<div class="layui-footer footer footer-demo" id="admin-footer">
 				<div class="layui-main">
 					<p>
-						工时系统
+						之年工时系统
 					</p>
 				</div>
 			</div>

@@ -271,10 +271,7 @@ public class RoleInfServiceImpl extends BaseServiceImpl<TSysRoleInf> implements 
 
 		// List<ZTree> zTrees = getTrees();
 		List<ZTree> zTrees = menuTrees();
-		for (ZTree z : zTrees) {
-			trees.add(z);
-		}
-
+		trees.addAll(zTrees);
 		return trees;
 	}
 

@@ -250,7 +250,7 @@ CREATE TABLE `t_app_project` (
 
 LOCK TABLES `t_app_project` WRITE;
 /*!40000 ALTER TABLE `t_app_project` DISABLE KEYS */;
-INSERT INTO `t_app_project` VALUES ('99876c72-08db-4c33-be05-cdbf97059fd1','工时系统','这是一个工时系统',100,'0','zhaoming','e6662435-9729-4875-b9dd-c6e8a38c222c',NULL,'1','0','2020-04-15 00:52:33',NULL);
+INSERT INTO `t_app_project` VALUES ('99876c72-08db-4c33-be05-cdbf97059fd1','之年工时系统','这是一个之年工时系统',100,'0','zhaoming','e6662435-9729-4875-b9dd-c6e8a38c222c',NULL,'1','0','2020-04-15 00:52:33',NULL);
 /*!40000 ALTER TABLE `t_app_project` ENABLE KEYS */;
 UNLOCK TABLES;
 

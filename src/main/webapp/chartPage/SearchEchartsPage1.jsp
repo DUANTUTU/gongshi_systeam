@@ -14,7 +14,7 @@
 %>
 <html>
 <head>
-    <title>工时系统</title>
+    <title>之年工时系统</title>
     <script src="<%=request.getContextPath()%>/js/jquery-2.1.1.min.js"></script>
     <script>
         $(window).load(function () {

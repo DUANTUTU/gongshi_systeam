@@ -68,6 +68,8 @@ public class TAppDebugDetailController extends BaseController {
 		try {
 			SessionInfo sessionInfo = (SessionInfo) session.getAttribute(Contans.SESSION_BEAN);
 			String userId=sessionInfo.getOperInf().getOperCd();
+
+
 			datagrid = tAppDebugDetailService.datagridByUserid(tAppDebugDetail,userId);
 		} catch (Exception e) {
 			logger.error(e.getMessage());

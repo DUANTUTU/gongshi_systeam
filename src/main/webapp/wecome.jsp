@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>工时系统</title>
+    <title>之年工时系统</title>
     <jsp:include page="inc.jsp"></jsp:include>
     <%--<script src="<%=request.getContextPath()%>/js/jquery-2.1.1.min.js"></script>--%>
     <%--<script>--%>
