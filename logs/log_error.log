@@ -2585,3 +2585,7 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211)
 	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
 	... 59 common frames omitted
+2023-05-08 15:27:07.328 [http-nio-8091-exec-10] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Unknown column 't.debug_conten' in 'field list'
+2023-05-08 15:27:14.245 [http-nio-8091-exec-1] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Unknown column 't.debug_conten' in 'field list'
+2023-05-08 15:27:18.013 [http-nio-8091-exec-3] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Unknown column 't.debug_conten' in 'field list'
+2023-05-08 15:27:19.147 [http-nio-8091-exec-6] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Unknown column 't.debug_conten' in 'field list'

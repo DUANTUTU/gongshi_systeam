@@ -43,6 +43,15 @@ public class TAppDebugDetail extends BasePageForLayUI implements java.io.Seriali
 	private Integer debugLeave;//缺陷等级
 	private Integer debugID;//缺陷ID
 	private String debugImage;//缺陷图片
+	private String debugContent;//缺陷内容
+	@Column( name = "debug_content"  , length = 255  )
+	public String getDebugContent() {
+		return debugContent;
+	}
+
+	public void setDebugContent(String debugContent) {
+		this.debugContent = debugContent;
+	}
 
 	public String getDebugImage() {
 		return debugImage;

@@ -33,7 +33,7 @@ public class FileUploadController extends BaseController {
 	 * @throws IllegalStateException
 	 * @throws IOException
 	 */
-	@RequestMapping("/upload")
+		@RequestMapping("/upload")
 	@ResponseBody
 	public Json springUpload(HttpServletRequest request) {
 		Json json = new Json();

@@ -34,7 +34,7 @@ public class TAppDebugDetailServiceImpl extends BaseServiceImpl<TAppDebugDetail>
 	@Override
 	public DatagridForLayUI datagrid(TAppDebugDetail tAppDebugDetail) throws Exception{
 		DatagridForLayUI grid = new DatagridForLayUI();
-		String sqlLeft = "select t.ID as id,t.MProjectid as mprojectid,t.MProjectplanid as mprojectplanid,t.MOpercd as mopercd,t.MWorkdetails as mworkdetails,t.MManhour as mmanhour,t.MCheckstatus as mcheckstatus,t.MCreatedate as mcreatedate,t.MCheckdate as mcheckdate ,t.MConfirm_id as mconfirmId" ;
+		String sqlLeft = "select t.ID as id,t.MProjectid as mprojectid,t.MProjectplanid as mprojectplanid,t.MOpercd as mopercd,t.MWorkdetails as mworkdetails,t.MManhour as mmanhour,t.MCheckstatus as mcheckstatus,t.MCreatedate as mcreatedate,t.MCheckdate as mcheckdate ,t.MConfirm_id as mconfirmId,t.debug_finish_date as debugFinishDate,t.debug_Id as debugId,t.debug_leave as debugLeave,t.debug_image as debugImage,t.mopercd_nm as mopercdNm,t.debug_content as debugContent" ;
 		String sql = " from t_app_debug_detail t where 1=1 " ;
 
 
