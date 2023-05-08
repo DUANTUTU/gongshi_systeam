@@ -27,31 +27,33 @@
         <div class="layui-inline">
             <label class="layui-form-label">项目里程碑ID</label>
             <div class="layui-input-block">
-                <input type="text" name="mprojectplanidNm" placeholder="无" readonly autocomplete="off" class="layui-input"/>
-                <input type="hidden" name="mprojectplanid" />
+                <input type="text" name="mprojectplanidNm" placeholder="无" readonly autocomplete="off"
+                       class="layui-input"/>
+                <input type="hidden" name="mprojectplanid"/>
             </div>
         </div>
         <div class="layui-inline">
             <label class="layui-form-label">人员id</label>
             <div class="layui-input-block">
                 <input type="text" name="mopercdNm" placeholder="无" readonly autocomplete="off" class="layui-input"/>
-                <input type="hidden" name="mopercd" />
+                <input type="hidden" name="mopercd"/>
             </div>
         </div>
         <div class="layui-form-item">
             <div class="layui-col-sm12">
                 <label class="layui-form-label">工作内容</label>
                 <div class="layui-input-block">
-                    <textarea name="mworkdetails" maxlength="1000" placeholder="请输入" readonly class="layui-textarea"></textarea>
+                    <textarea name="mworkdetails" maxlength="1000" placeholder="请输入" readonly
+                              class="layui-textarea"></textarea>
                 </div>
             </div>
         </div>
-<%--        <div class="layui-inline">--%>
-<%--            <label class="layui-form-label">工作内容</label>--%>
-<%--            <div class="layui-input-block">--%>
-<%--                <input type="text" name="mworkdetails" placeholder="无" readonly autocomplete="off" class="layui-input"/>--%>
-<%--            </div>--%>
-<%--        </div>--%>
+        <%--        <div class="layui-inline">--%>
+        <%--            <label class="layui-form-label">工作内容</label>--%>
+        <%--            <div class="layui-input-block">--%>
+        <%--                <input type="text" name="mworkdetails" placeholder="无" readonly autocomplete="off" class="layui-input"/>--%>
+        <%--            </div>--%>
+        <%--        </div>--%>
         <div class="layui-inline">
             <label class="layui-form-label">工时</label>
             <div class="layui-input-block">
@@ -61,13 +63,15 @@
         <div class="layui-inline">
             <label class="layui-form-label">改Bug工时</label>
             <div class="layui-input-block">
-                <input type="text" name="debugFinishDate" placeholder="无" readonly autocomplete="off" class="layui-input"/>
+                <input type="text" name="debugFinishDate" placeholder="无"
+                       class="layui-input"/>
             </div>
         </div>
         <div class="layui-inline">
             <label class="layui-form-label">审核状态</label>
             <div class="layui-input-block">
-                <input type="text" name="mcheckstatusNm" placeholder="无" readonly autocomplete="off" class="layui-input"/>
+                <input type="text" name="mcheckstatusNm" placeholder="无" readonly autocomplete="off"
+                       class="layui-input"/>
                 <input type="hidden" name="mcheckstatus"/>
             </div>
         </div>
@@ -81,14 +85,14 @@
         <div class="layui-inline">
             <label class="layui-form-label">缺陷标题</label>
             <div class="layui-input-block">
-                <input type="text" name="mremark" placeholder="无"  autocomplete="off" class="layui-input"/>
+                <input type="text" name="mremark" placeholder="无" autocomplete="off" class="layui-input"/>
             </div>
         </div>
         <div class="layui-inline">
             <label class="layui-form-label">严重程度</label>
             <div class="layui-input-block">
-<%--                <input type="text" name="debugLeave" placeholder="无"  autocomplete="off" class="layui-input"/>--%>
-                <select id="mySelect" name="debugLeave"  placeholder="debugLeave"  autocomplete="off" class="layui-input">
+                <%--                <input type="text" name="debugLeave" placeholder="无"  autocomplete="off" class="layui-input"/>--%>
+                <select id="mySelect" name="debugLeave" placeholder="debugLeave" autocomplete="off" class="layui-input">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -99,14 +103,14 @@
         <div class="layui-inline">
             <label class="layui-form-label">缺陷号顺序</label>
             <div class="layui-input-block">
-                <input type="text" name="debugID" placeholder="无"  autocomplete="off" class="layui-input"/>
+                <input type="text" name="debugID" placeholder="无" autocomplete="off" class="layui-input"/>
             </div>
         </div>
         <div class="layui-form-item">
             <div class="layui-col-sm12">
                 <label class="layui-form-label">测试1意见</label>
                 <div class="layui-input-block">
-                    <textarea name="debugContent" maxlength="1000" placeholder="请输入"  class="layui-textarea"></textarea>
+                    <textarea name="debugContent" maxlength="1000" placeholder="请输入" class="layui-textarea"></textarea>
                 </div>
             </div>
         </div>
@@ -116,17 +120,18 @@
     <!-- 按钮组 -->
     <div class="layui-form-item">
         <div class="layui-input-block">
-<%--            <button class="layui-btn" lay-submit="" lay-filter="okSubmit">同意</button>--%>
+            <%--            <button class="layui-btn" lay-submit="" lay-filter="okSubmit">同意</button>--%>
             <button class="layui-btn layui-btn-danger" lay-submit="" lay-filter="notokSubmit">打回提交</button>
-    <button class="layui-btn layui-btn-danger" lay-submit="" lay-filter="SubmitList">提交</button>
+            <button class="layui-btn layui-btn-danger" lay-submit="" lay-filter="SubmitList">提交</button>
             <button class="layui-btn layui-btn-primary" id="close">关闭</button>
         </div>
     </div>
 </form>
+<table id="demo" lay-filter="test"></table>
 
 <script>
 
-    layui.use(['form', 'layedit', 'laydate', 'jquery'], function () {
+    layui.use(['form', 'layedit', 'laydate', 'jquery', 'table'], function () {
         var form = layui.form;
         var $ = layui.jquery;
         var laydate = layui.laydate;
@@ -217,6 +222,44 @@
                 }
             });
             return false;
+        });
+
+        var table = layui.table;
+
+        //第一个实例
+        table.render({
+            elem: '#demo',
+            height: 312,
+            url: '<%=request.getContextPath()%>/tAppDebugDetail/datagrid' , //数据接口
+            page: true ,//开启分页
+            method: 'POST', //方式
+            page: true,//是否开启分页
+            limits: [10, 20, 30, 60, 90, 100],
+            limit: 20, //默认采用20
+            cellMinWidth: 120,
+            even: true, //开启隔行背景
+            // id: 'searchID',
+            height: 'full-200',
+            done: function (res, curr, count) {
+                //加载后回调
+                layer.close(index);//关闭
+                noAuthTip(res);//无权限提示
+            },
+            cols: [[ //表头
+                // {field: 'id', title: 'ID', width: 80, sort: true, fixed: 'left'},
+                 {field: 'mprojectidNm', title: '项目名称', width: 80}
+                , {field: 'mprojectplanidNm', title: '项目里程碑', width: 80, sort: true}
+                , {field: 'mopercd', title: '人员ID', width: 80}
+                // , {field: 'mworkdetails', title: '工作内容', width: 177}
+                , {field: 'mmanhour', title: '工时', width: 80, sort: true}
+                , {field: 'debugFinishDate', title: '改Bug工时', width: 80, sort: true}
+                // , {field: 'mcheckstatusNm', title: '审核状态', width: 80}
+                , {field: 'mcreatedate', title: '创建时间', width: 135, sort: true}
+                , {field: 'mremark', title: '缺陷标题', width: 135, sort: true}
+                , {field: 'debugLeave', title: '缺陷程度', width: 135, sort: true}
+                , {field: 'debugID', title: '缺陷号顺序', width: 135, sort: true}
+                , {field: 'debugContent', title: '测试意见', width: 135, sort: true}
+            ]]
         });
     });
 </script>

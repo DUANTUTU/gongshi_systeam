@@ -34,6 +34,8 @@ public class TAppDebugDetail extends BasePageForLayUI implements java.io.Seriali
 
 	private Integer mmanhour;//工时
 
+	private String mremark;
+
 	private String mcheckstatus;//审核状态
 
 	private Date mcreatedate;//创建时间
@@ -51,6 +53,14 @@ public class TAppDebugDetail extends BasePageForLayUI implements java.io.Seriali
 
 	public void setDebugContent(String debugContent) {
 		this.debugContent = debugContent;
+	}
+
+	public String getMremark() {
+		return mremark;
+	}
+
+	public void setMremark(String mremark) {
+		this.mremark = mremark;
 	}
 
 	public String getDebugImage() {

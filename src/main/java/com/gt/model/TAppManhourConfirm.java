@@ -45,6 +45,8 @@ public class TAppManhourConfirm extends BasePageForLayUI implements java.io.Seri
 	private Integer debugID;//缺陷ID
 	//缺陷内容
 	private String debugContent;
+
+
 	//预计完成时间
 	private Integer debugFinishDate;
 	@Column( name = "debug_finish_date"  , length = 2  )

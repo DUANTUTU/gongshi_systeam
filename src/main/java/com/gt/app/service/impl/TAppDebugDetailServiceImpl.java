@@ -34,8 +34,8 @@ public class TAppDebugDetailServiceImpl extends BaseServiceImpl<TAppDebugDetail>
 	@Override
 	public DatagridForLayUI datagrid(TAppDebugDetail tAppDebugDetail) throws Exception{
 		DatagridForLayUI grid = new DatagridForLayUI();
-		String sqlLeft = "select t.ID as id,t.MProjectid as mprojectid,t.MProjectplanid as mprojectplanid,t.MOpercd as mopercd,t.MWorkdetails as mworkdetails,t.MManhour as mmanhour,t.MCheckstatus as mcheckstatus,t.MCreatedate as mcreatedate,t.MCheckdate as mcheckdate ,t.MConfirm_id as mconfirmId,t.debug_finish_date as debugFinishDate,t.debug_Id as debugId,t.debug_leave as debugLeave,t.debug_image as debugImage,t.mopercd_nm as mopercdNm,t.debug_content as debugContent" ;
-		String sql = " from t_app_debug_detail t where 1=1 " ;
+		String sqlLeft = "select t.ID as id,t.MProjectid as mprojectid,t.MRemark as mremark, c.PName AS mprojectidNm, t.MProjectplanid as mprojectplanid,b.PPlanname AS mprojectplanidNm,t.MOpercd as mopercd,t.MWorkdetails as mworkdetails,t.MManhour as mmanhour,t.MCheckstatus as mcheckstatus,t.MCreatedate as mcreatedate,t.MCheckdate as mcheckdate ,t.MConfirm_id as mconfirmId,t.debug_finish_date as debugFinishDate,t.debug_Id as debugID,t.debug_leave as debugLeave,t.debug_image as debugImage,t.mopercd_nm as mopercdNm,t.debug_content as debugContent" ;
+		String sql = " from t_app_debug_detail t LEFT JOIN t_app_project_plan b ON t.MProjectplanid = b.ID LEFT JOIN t_app_project c ON t.MProjectid = c.ID where 1=1 " ;
 
 
 
@@ -89,12 +89,12 @@ public class TAppDebugDetailServiceImpl extends BaseServiceImpl<TAppDebugDetail>
 		}
 		
 		
-		String totalsql = "select count(*) " + sql;
+		String totalsql = "select count(DISTINCT t.ID ) " + sql;
 
 		//排序
-		sql += " order by  ID desc";
+		sql += " order by ID desc";
 	
-		List<Map> maps = findBySql(sqlLeft+sql, param, tAppDebugDetail.getPage(), tAppDebugDetail.getLimit());
+		List<Map> maps = findBySql(sqlLeft + sql, param, tAppDebugDetail.getPage(), tAppDebugDetail.getLimit());
 		Long total = countBySql(totalsql,param);
 		grid.setCount(total);
 		grid.setData(maps);

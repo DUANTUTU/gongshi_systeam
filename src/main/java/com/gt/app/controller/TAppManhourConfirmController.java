@@ -489,10 +489,13 @@ public Json modifyCeShiShenHe(TAppManhourConfirm tAppManhourConfirm, String type
             }
             if ("SubmitList".equals(type)) {
             TAppDebugDetail tAppDebugDetail = new TAppDebugDetail();
+            tAppDebugDetail.setDebugContent(tAppManhourConfirm.getDebugContent());
             tAppDebugDetail.setMprojectid(tAppManhourConfirm.getMprojectid());
-            tAppDebugDetail.setMprojectid(tAppManhourConfirm.getMprojectid());
+            tAppDebugDetail.setMprojectplanid(tAppManhourConfirm.getMprojectplanid());
+            tAppDebugDetail.setMworkdetails(tAppManhourConfirm.getMworkdetails());
             tAppDebugDetail.setMopercd(tAppManhourConfirm.getMopercd());
             tAppDebugDetail.setMmanhour(tAppManhourConfirm.getMmanhour());
+            tAppDebugDetail.setMremark(tAppManhourConfirm.getMremark());
             tAppDebugDetail.setMcreatedate(date);
             tAppDebugDetail.setDebugID(tAppManhourConfirm.getDebugID());
             tAppDebugDetail.setDebugFinishDate(tAppManhourConfirm.getDebugFinishDate());
