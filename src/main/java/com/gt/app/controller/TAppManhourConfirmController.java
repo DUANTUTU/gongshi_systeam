@@ -449,6 +449,35 @@ public Json modifyCeShiShenHe(TAppManhourConfirm tAppManhourConfirm, String type
 /*
 * 测试详情审核
 * */
+    @RequestMapping("/debugDetailShenHe")
+    @ResponseBody
+    public Json debugDetailShenHe(TAppManhourConfirm tAppManhourConfirm)
+    {
+        Json j = new Json();
+        try {
+            TAppDebugDetail tAppDebugDetail = new TAppDebugDetail();
+            tAppDebugDetail.setMprojectid(tAppManhourConfirm.getMprojectid());
+            tAppDebugDetail.setMprojectid(tAppManhourConfirm.getMprojectid());
+            tAppDebugDetail.setMopercd(tAppManhourConfirm.getMopercd());
+            tAppDebugDetail.setMmanhour(tAppManhourConfirm.getMmanhour());
+
+            tAppDebugDetail.setDebugID(tAppManhourConfirm.getDebugID());
+            tAppDebugDetail.setDebugFinishDate(tAppManhourConfirm.getDebugFinishDate());
+            tAppDebugDetail.setDebugLeave(tAppManhourConfirm.getDebugLeave());
+
+            tAppDebugDetailService.add(tAppDebugDetail);
+        }
+        catch (Exception e) {
+            logger.error(e.getMessage());
+            j.setSuccess(false);
+            j.setMsg("修改失败:" + e.getMessage());
+            e.printStackTrace();
+        }
+
+        //添加系统日志
+
+        return j;
+    }
 @RequestMapping("/modifyCeShiShenHeDetail")
 @ResponseBody
     public Json modifyCeShiShenHeDetail(TAppManhourConfirm tAppManhourConfirm, String type, HttpServletRequest request, HttpSession session) {

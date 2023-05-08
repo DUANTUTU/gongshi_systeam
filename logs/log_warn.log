@@ -110,3 +110,60 @@
 2023-05-08 10:57:08.239 [main] WARN  o.s.b.a.freemarker.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
 2023-05-08 10:57:13.808 [http-nio-8091-exec-3] WARN  org.hibernate.dialect.function.TemplateRenderer - HHH000174: Function template anticipated 4 arguments, but 1 arguments encountered
 2023-05-08 10:57:32.050 [http-nio-8091-exec-8] WARN  org.hibernate.dialect.function.TemplateRenderer - HHH000174: Function template anticipated 4 arguments, but 1 arguments encountered
+2023-05-08 14:04:48.035 [main] WARN  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static com.gt.quartzService.GenerateDayPaper com.gt.quartzService.GenerateDayPaper.createChildTable
+2023-05-08 14:04:48.036 [main] WARN  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static com.gt.quartzService.GenerateManhourAssess com.gt.quartzService.GenerateManhourAssess.createChildTable
+2023-05-08 14:04:48.038 [main] WARN  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static com.gt.quartzService.GenerateMeritAssess com.gt.quartzService.GenerateMeritAssess.createChildTable
+2023-05-08 14:04:48.039 [main] WARN  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static com.gt.quartzService.GenerateMonthPaper com.gt.quartzService.GenerateMonthPaper.createChildTable
+2023-05-08 14:04:48.041 [main] WARN  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static com.gt.quartzService.GenerateProjectAssess com.gt.quartzService.GenerateProjectAssess.createChildTable
+2023-05-08 14:04:48.042 [main] WARN  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static com.gt.quartzService.GenerateWeekPaper com.gt.quartzService.GenerateWeekPaper.createChildTable
+2023-05-08 14:04:48.497 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-08 14:04:49.215 [main] WARN  o.s.b.a.freemarker.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2023-05-08 14:04:55.612 [http-nio-8091-exec-7] WARN  org.hibernate.dialect.function.TemplateRenderer - HHH000174: Function template anticipated 4 arguments, but 1 arguments encountered
+2023-05-08 14:08:38.922 [http-nio-8091-exec-1] WARN  org.hibernate.dialect.function.TemplateRenderer - HHH000174: Function template anticipated 4 arguments, but 1 arguments encountered
+2023-05-08 14:42:20.766 [http-nio-8091-exec-1] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 08S01
+2023-05-08 14:42:20.766 [http-nio-8091-exec-2] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 08S01
+2023-05-08 14:42:20.767 [http-nio-8091-exec-1] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 08S01
+2023-05-08 14:42:20.767 [http-nio-8091-exec-2] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 08S01
+2023-05-08 14:42:20.811 [http-nio-8091-exec-3] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 08S01
+2023-05-08 14:42:20.811 [http-nio-8091-exec-3] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 08S01
+2023-05-08 14:42:22.972 [http-nio-8091-exec-5] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 08S01
+2023-05-08 14:42:22.973 [http-nio-8091-exec-5] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 08S01
+2023-05-08 14:42:23.004 [http-nio-8091-exec-8] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 08S01
+2023-05-08 14:42:23.004 [http-nio-8091-exec-8] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 08S01
+2023-05-08 14:42:50.939 [http-nio-8091-exec-3] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 08S01
+2023-05-08 14:42:50.939 [http-nio-8091-exec-2] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 08S01
+2023-05-08 14:42:50.939 [http-nio-8091-exec-1] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 08S01
+2023-05-08 14:42:50.939 [http-nio-8091-exec-3] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 08S01
+2023-05-08 14:42:50.939 [http-nio-8091-exec-1] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 08S01
+2023-05-08 14:42:50.939 [http-nio-8091-exec-2] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 08S01
+2023-05-08 14:42:52.981 [http-nio-8091-exec-5] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 08S01
+2023-05-08 14:42:52.981 [http-nio-8091-exec-5] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 08S01
+2023-05-08 14:42:53.013 [http-nio-8091-exec-8] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 08S01
+2023-05-08 14:42:53.013 [http-nio-8091-exec-8] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 08S01
+2023-05-08 14:43:09.577 [main] WARN  o.h.e.jdbc.env.internal.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2023-05-08 14:43:10.885 [main] WARN  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static com.gt.quartzService.GenerateDayPaper com.gt.quartzService.GenerateDayPaper.createChildTable
+2023-05-08 14:43:10.887 [main] WARN  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static com.gt.quartzService.GenerateManhourAssess com.gt.quartzService.GenerateManhourAssess.createChildTable
+2023-05-08 14:43:10.888 [main] WARN  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static com.gt.quartzService.GenerateMeritAssess com.gt.quartzService.GenerateMeritAssess.createChildTable
+2023-05-08 14:43:10.890 [main] WARN  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static com.gt.quartzService.GenerateMonthPaper com.gt.quartzService.GenerateMonthPaper.createChildTable
+2023-05-08 14:43:10.892 [main] WARN  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static com.gt.quartzService.GenerateProjectAssess com.gt.quartzService.GenerateProjectAssess.createChildTable
+2023-05-08 14:43:10.895 [main] WARN  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static com.gt.quartzService.GenerateWeekPaper com.gt.quartzService.GenerateWeekPaper.createChildTable
+2023-05-08 14:43:11.371 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-08 14:43:12.114 [main] WARN  o.s.b.a.freemarker.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2023-05-08 14:43:35.721 [http-nio-8091-exec-3] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 08S01
+2023-05-08 14:43:38.782 [http-nio-8091-exec-7] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 08S01
+2023-05-08 14:43:41.847 [http-nio-8091-exec-3] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 08S01
+2023-05-08 14:43:44.914 [http-nio-8091-exec-7] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 08S01
+2023-05-08 14:44:03.683 [main] WARN  o.h.e.jdbc.env.internal.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2023-05-08 14:44:04.895 [main] WARN  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static com.gt.quartzService.GenerateDayPaper com.gt.quartzService.GenerateDayPaper.createChildTable
+2023-05-08 14:44:04.896 [main] WARN  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static com.gt.quartzService.GenerateManhourAssess com.gt.quartzService.GenerateManhourAssess.createChildTable
+2023-05-08 14:44:04.898 [main] WARN  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static com.gt.quartzService.GenerateMeritAssess com.gt.quartzService.GenerateMeritAssess.createChildTable
+2023-05-08 14:44:04.899 [main] WARN  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static com.gt.quartzService.GenerateMonthPaper com.gt.quartzService.GenerateMonthPaper.createChildTable
+2023-05-08 14:44:04.900 [main] WARN  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static com.gt.quartzService.GenerateProjectAssess com.gt.quartzService.GenerateProjectAssess.createChildTable
+2023-05-08 14:44:04.902 [main] WARN  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static com.gt.quartzService.GenerateWeekPaper com.gt.quartzService.GenerateWeekPaper.createChildTable
+2023-05-08 14:44:05.348 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-08 14:44:06.303 [main] WARN  o.s.b.a.freemarker.FreeMarkerAutoConfiguration - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2023-05-08 14:44:17.248 [http-nio-8091-exec-1] WARN  org.hibernate.dialect.function.TemplateRenderer - HHH000174: Function template anticipated 4 arguments, but 1 arguments encountered
