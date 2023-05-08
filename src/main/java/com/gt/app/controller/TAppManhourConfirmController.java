@@ -6,6 +6,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import com.gt.app.service.*;
+import com.gt.app.service.impl.TAppDebugDetailServiceImpl;
 import com.gt.model.*;
 import com.gt.pageModel.SessionInfo;
 import com.gt.utils.Contans;
@@ -30,6 +31,17 @@ import com.gt.sys.controller.BaseController;
 
 public class TAppManhourConfirmController extends BaseController {
     private Logger logger = Logger.getLogger(TAppManhourConfirmController.class);
+    @Autowired
+    private ITAppDebugDetailService tAppDebugDetailService;
+
+    public ITAppDebugDetailService gettAppDebugDetailService() {
+        return tAppDebugDetailService;
+    }
+
+    public void settAppDebugDetailService(ITAppDebugDetailService tAppDebugDetailService) {
+        this.tAppDebugDetailService = tAppDebugDetailService;
+    }
+
     private ITAppManhourConfirmService tAppManhourConfirmService;
 
     public ITAppManhourConfirmService getTAppManhourConfirmService() {
@@ -443,6 +455,67 @@ public Json modifyCeShiShenHe(TAppManhourConfirm tAppManhourConfirm, String type
         Json j = new Json();
         try {
             Date date = new Date();
+            if ("dahuitijiao".equals(type)) {
+                tAppManhourConfirm.setMcheckstatus(Contans.CHECK_STATUS_ARRY[6]);
+            }
+            if ("SubmitList".equals(type)) {
+            TAppDebugDetail tAppDebugDetail = new TAppDebugDetail();
+            tAppDebugDetail.setMprojectid(tAppManhourConfirm.getMprojectid());
+            tAppDebugDetail.setMprojectid(tAppManhourConfirm.getMprojectid());
+            tAppDebugDetail.setMopercd(tAppManhourConfirm.getMopercd());
+            tAppDebugDetail.setMmanhour(tAppManhourConfirm.getMmanhour());
+            tAppDebugDetail.setMcreatedate(date);
+            tAppDebugDetail.setDebugID(tAppManhourConfirm.getDebugID());
+            tAppDebugDetail.setDebugFinishDate(tAppManhourConfirm.getDebugFinishDate());
+            tAppDebugDetail.setDebugLeave(tAppManhourConfirm.getDebugLeave());
+
+           tAppDebugDetailService.add(tAppDebugDetail);
+                //同意
+                //生效工时表插入生效工时
+//                tAppManhourConfirm.setMcheckstatus(Contans.CHECK_STATUS_ARRY[6]);
+//                tAppManhourConfirm.setMcheckdate(date);
+//
+//                TAppManhour tAppManhour = new TAppManhour();
+//                tAppManhour.setId(PbUtils.getUUID());
+//                tAppManhour.setMcreatedate(date);
+//                tAppManhour.setMmanhourconfimid(tAppManhourConfirm.getId());
+//                tAppManhour.setMprojectid(tAppManhourConfirm.getMprojectid());
+//                tAppManhour.setMprojectplanid(tAppManhourConfirm.getMprojectplanid());
+//                tAppManhour.setMopercd(tAppManhourConfirm.getMopercd());
+//                tAppManhourService.add(tAppManhour);
+//
+//                //项目确认工时修改
+//                TAppProject tAppProject = new TAppProject();
+//                tAppProject.setId(tAppManhourConfirm.getMprojectid());
+//                DatagridForLayUI datagrid = tAppProjectService.datagrid(tAppProject, null);
+//                if (datagrid.getCount() > 0) {
+//                    List<Map> mapList = datagrid.getData();
+//                    String hourStr = mapList.get(0).get("pmanhour") == null ? "" : mapList.get(0).get("pmanhour").toString();
+//                    int hour = 0;
+//                    if (null != hourStr && !"".equals(hourStr)) {
+//                        hour = Integer.parseInt(hourStr);
+//                    }
+//                    hour = hour + tAppManhourConfirm.getMmanhour();
+//                    tAppProject.setPmanhour(hour);
+//                    tAppProjectService.modify(tAppProject);
+//                }
+//                //项目里程碑工时修改
+//                TAppProjectPlan tAppProjectPlan = new TAppProjectPlan();
+//                tAppProjectPlan.setId(tAppManhourConfirm.getMprojectplanid());
+//                DatagridForLayUI datagridplan = tAppProjectPlanService.datagrid(tAppProjectPlan);
+//                if (datagridplan.getCount() > 0) {
+//                    List<Map> mapList = datagrid.getData();
+//                    String hourStr = mapList.get(0).get("psummanhour") == null ? "" : mapList.get(0).get("psummanhour").toString();
+//                    int hour = 0;
+//                    if (!PbUtils.isEmpty(hourStr)) {
+//                        hour = Integer.parseInt(hourStr);
+//                    }
+//                    hour = hour + tAppManhourConfirm.getMmanhour();
+//                    tAppProjectPlan.setPsummanhour(hour);
+//                    tAppProjectPlanService.modify(tAppProjectPlan);
+//                }
+
+            }
             if ("okSubmit".equals(type)) {
                 //同意
                 //生效工时表插入生效工时

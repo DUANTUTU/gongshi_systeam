@@ -179,6 +179,7 @@ public class TAppDebugDetailServiceImpl extends BaseServiceImpl<TAppDebugDetail>
 	@Override
 	public Json add(TAppDebugDetail inf) {
 		Json j = new Json();
+		inf.setId(PbUtils.getUUID());
 		save(inf);
 		j.setSuccess(true);
 		j.setMsg("新增成功");

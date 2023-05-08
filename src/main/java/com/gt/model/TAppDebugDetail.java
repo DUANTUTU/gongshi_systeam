@@ -39,7 +39,26 @@ public class TAppDebugDetail extends BasePageForLayUI implements java.io.Seriali
 	private Date mcreatedate;//创建时间
 	private String mconfirmid;//提报项目id
 	private String mcheckdate;//审核时间
-	private Integer debugFinishDate;
+	private Integer debugFinishDate;  //预计完成时间
+	private Integer debugLeave;//缺陷等级
+	private Integer debugID;//缺陷ID
+	@Column( name = "debug_leave"  , length = 2  )
+	public Integer getDebugLeave() {
+		return debugLeave;
+	}
+
+	public void setDebugLeave(Integer debugLeave) {
+		this.debugLeave = debugLeave;
+	}
+	@Column( name = "debug_id"  , length = 100  )
+	public Integer getDebugID() {
+		return debugID;
+	}
+
+	public void setDebugID(Integer debugID) {
+		this.debugID = debugID;
+	}
+
 	@Column( name = "debug_finish_date"  , length = 2  )
 	public Integer getDebugFinishDate() {
 		return debugFinishDate;
